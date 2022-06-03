@@ -4,6 +4,8 @@ require('dotenv').config()
 const ora = require('ora')
 const config = require('./config')
 const fs = require('fs')
+const express = require("express");
+const bodyParser = require("body-parser");
 
 // Slash Commands
 const { Client, Collection } = require('discord.js')
@@ -108,5 +110,20 @@ client.on('messageCreate', message => {
 });
 
 client.login(config.bot.token)
+
+const app = express();
+
+app.use(bodyParser.urlencoded({ extended: true })); 
+app.get("/api/v1/events", (req, res) => {
+  fs.readFile( __dirname + "/" + "events.json", 'utf8', function (err, data) {
+    //console.log( data );
+    res.end( data );
+  });
+});
+
+const port = 55555;
+app.listen(port, () => {
+  console.log(` and starting server on port ${port}`);
+});
 
 

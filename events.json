@@ -1,57 +1,58 @@
-[{
+[
+  {
     "name": "Goop Week 1",
     "coverURL": "https://i1.sndcdn.com/artworks-wQ15iwaOo57798xN-0oDd5w-t500x500.jpg",
-    "startTime": "1-May-2021 0:0:0",
-    "endTime": "8-May-2021 23:59:59",
+    "startTime": "1-5-2021-0-0-0",
+    "endTime": "8-5-2021-23-59-59",
     "isActive": false
-},
-{
+  },
+  {
     "name": "Goop Week 2",
     "coverURL": "https://i1.sndcdn.com/artworks-oz43zqLF8YLsccvq-PmDtJQ-t500x500.jpg",
-    "startTime": "5-Jun-2021 0:0:0",
-    "endTime": "12-Jun-2021 23:59:59",
+    "startTime": "5-6-2021-0-0-0",
+    "endTime": "12-6-2021-23-59-59",
     "isActive": false
-},
-{
+  },
+  {
     "name": "Goop Week 3",
     "coverURL": "https://i1.sndcdn.com/artworks-SiOulaVETgqEp8yI-6W5uAg-t500x500.jpg",
-    "startTime": "10-Jul-2021 0:0:0",
-    "endTime": "17-Jul-2021 23:59:59",
+    "startTime": "10-7-2021-0-0-0",
+    "endTime": "17-7-2021-23-59-59",
     "isActive": false
-},
-{
+  },
+  {
     "name": "Goop Week 4a",
     "coverURL": "https://i1.sndcdn.com/artworks-zhaBVNYgNxrGjp9p-Qoa7Zg-t500x500.jpg",
-    "startTime": "14-Sep-2021 0:0:0",
-    "endTime": "21-Sep-2021 23:59:59",
+    "startTime": "14-9-2021-0-0-0",
+    "endTime": "21-9-2021-23-59-59",
     "isActive": false
-},
-{
+  },
+  {
     "name": "Goop Week 4b",
     "coverURL": "https://i1.sndcdn.com/artworks-skkmyLcaq6mxOZjd-7zw4vg-t500x500.jpg",
-    "startTime": "14-Sep-2021 0:0:0",
-    "endTime": "21-Sep-2021 23:59:59",
+    "startTime": "14-9-2021-0-0-0",
+    "endTime": "21-9-2021-23-59-59",
     "isActive": false
-},
-{
-    "name":"Goop Week 5a",
+  },
+  {
+    "name": "Goop Week 5a",
     "coverURL": "https://i1.sndcdn.com/artworks-vi3yTd1Ka8qcdQYW-PIxc4g-t500x500.jpg",
-    "startTime": "28-Oct-2021 0:0:0",
-    "endTime": "4-Nov-2021 23:59:59",
+    "startTime": "28-8-2021-0-0-0",
+    "endTime": "4-9-2021-23-59-59",
     "isActive": false
-},
-{
-    "name":"Goop Week 5b",
+  },
+  {
+    "name": "Goop Week 5b",
     "coverURL": "https://i1.sndcdn.com/artworks-f42DjkCf5SKstu86-LxYvgA-t500x500.jpg",
-    "startTime": "28-Oct-2021 0:0:0",
-    "endTime": "4-Nov-2021 23:59:59",
+    "startTime": "28-8-2021-0-0-0",
+    "endTime": "4-9-2021-23-59-59",
     "isActive": false
-},
-{
-    "name":"Goop Week 6",
+  },
+  {
+    "name": "Goop Week 6",
     "coverURL": "https://i1.sndcdn.com/artworks-ypgqPjnAVxfa7joR-GE4Ylw-t500x500.jpg",
-    "startTime": "21-Jan-2021 0:0:0",
-    "endTime": "4-Jun-2021 23:59:59",
+    "startTime": "21-8-2022-0-0-0",
+    "endTime": "4-6-2022-23-59-59",
     "isActive": true
-}]
-
+  }
+]

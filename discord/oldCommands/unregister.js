@@ -1,4 +1,6 @@
 const config = require("../../config");
+const { Permissions } = require('discord.js')
+
 
 module.exports = {
     name: "unregister",
@@ -6,7 +8,7 @@ module.exports = {
     description: "Unregsiter slash commands",
     category: "admin",
     guildOnly: false,
-    memberpermissions:"MANAGE_CHANNEL",
+    memberpermissions:Permissions.FLAGS.ADMINISTRATOR,
     adminPermOverride: true,
     cooldown: 2,
     usage: "",

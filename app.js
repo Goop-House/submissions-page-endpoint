@@ -8,7 +8,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 // Slash Commands
-const { Client, Collection } = require('discord.js')
+const { Client, Collection, Permissions } = require('discord.js')
 const slash = require('./discord/util/slash')
 
 // CLI
@@ -66,6 +66,10 @@ client.on('messageCreate', message => {
     // Check if command can be executed in DM
     if (oldCommand.guildOnly && message.channel.type !== 'text') {
         return message.reply('I can\'t execute that command inside DMs!');
+    }
+
+    if (!message.member.permissions.has(oldCommand.memberpermissions)) {
+        return message.reply("You don't have permission to do this.")
     }
 
     // Check if args are required

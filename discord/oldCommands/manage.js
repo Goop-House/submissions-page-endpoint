@@ -3,6 +3,8 @@ const config = require("../../config");
 var exec = require('child_process').exec;
 
 const http = require('http');
+const { Permissions } = require('discord.js')
+
 
 module.exports = {
     name: "manage",
@@ -10,7 +12,7 @@ module.exports = {
     description: "Manage submission page users",
     category: "admin",
     guildOnly: false,
-    memberpermissions:"MANAGE_CHANNEL",
+    memberpermissions:Permissions.FLAGS.ADMINISTRATOR,
     adminPermOverride: true,
     cooldown: 2,
     usage: "",

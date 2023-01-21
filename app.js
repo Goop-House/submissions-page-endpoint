@@ -119,13 +119,14 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true })); 
 app.get("/api/v1/events", (req, res) => {
+  console.log("CONNECT")
   fs.readFile( __dirname + "/" + "events.json", 'utf8', function (err, data) {
     //console.log( data );
     res.end( data );
   });
 });
 
-const port = 55555;
+const port = 55554;
 app.listen(port, () => {
   console.log(` and starting server on port ${port}`);
 });

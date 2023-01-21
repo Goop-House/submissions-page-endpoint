@@ -99,9 +99,9 @@ function generatePassword(interaction) {
 
 function sendDetails(discordID, password, discordTag, discordPicture) {
   return new Promise((resolve, reject) => {
-    console.log(`http://localhost:8080/api/v1/endpoint/discordID=${discordID}&password=${password}&discordTag=${discordTag}&discordPicture=${discordPicture}`)
+    console.log(`http://localhost:777/api/v1/endpoint/discordID=${discordID}&password=${password}&discordTag=${discordTag}&discordPicture=${discordPicture}`)
 
-      http.get(`http://localhost:8080/api/v1/endpoint/discordID=${discordID}&password=${password}&discordTag=${discordTag}&discordPicture=${discordPicture}`, (resp) => {
+      http.get(`http://localhost:777/api/v1/endpoint/discordID=${discordID}&password=${password}&discordTag=${discordTag}&discordPicture=${discordPicture}`, (resp) => {
         let data = '';
       
         resp.on('data', (chunk) => {

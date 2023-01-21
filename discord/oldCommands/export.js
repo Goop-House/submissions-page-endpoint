@@ -19,18 +19,18 @@ module.exports = {
     usage: "",
     execute(message, args, client) {
 
-      const reply = sendDetails(config.bot.token1, args[0])
+      sendDetails(config.bot.token, args[0]).then((reply) => {
 
-      message.channel.send("Result: " + reply.toString());
-        
+       message.channel.send("Result: " + reply.toString());
+      });
     },
 };
 
 async function sendDetails(token, type) {
     return new Promise((resolve, reject) => {
-        console.log(`http://localhost:8080/api/v1/export/token=${token}&type=${type}`)
+        console.log(`http://localhost:777/api/v1/export/token=${token}&type=${type}`)
   
-        http.get(`http://localhost:8080/api/v1/export/token=${token}&type=${type}`, (resp) => {
+        http.get(`http://localhost:777/api/v1/export/token=${token}&type=${type}`, (resp) => {
           let data = '';
         
           resp.on('data', (chunk) => {

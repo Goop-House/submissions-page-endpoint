@@ -59,9 +59,9 @@ async function sendDetails(token, action, user, input) {
         if(action == "create"){
           input = (input + "," + avatar + "," + username)
         }
-        console.log(`http://localhost:777/api/v1/manage/token=${token}&action=${action}&user=${user}&input=${input}`)
+        console.log(`http://10.99.0.51:777/api/v1/manage/token=${token}&action=${action}&user=${user}&input=${input}`)
   
-        http.get(`http://localhost:777/api/v1/manage/token=${token}&action=${action}&user=${user}&input=${input}`, (resp) => {
+        http.get(`http://10.99.0.51:777/api/v1/manage/token=${token}&action=${action}&user=${user}&input=${input}`, (resp) => {
           let data = '';
         
           resp.on('data', (chunk) => {

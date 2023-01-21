@@ -67,14 +67,19 @@ module.exports = {
       console.log(userPassword);
       const embed = new MessageEmbed()
         .setColor('#0099ff')
-        .setTitle('Your Submissions Page Credentials (These have also been DMd to you)')
+        .setTitle('Your Submissions Page Credentials (These have also been DMd to you if your DMs are on!)')
         .setURL('https://goop.house/')
         .addFields(
           { name: 'Username', value: interaction.user.id, inline: false },
           { name: 'Password', value: userPassword, inline: false },
         )
       ;
-      await interaction.user.send({ embeds: [embed]});
+      try {
+        await interaction.user.send({ embeds: [embed]});
+      }
+      catch(err) {
+        console.log(err)
+      }
       await interaction.reply({ embeds: [embed] , ephemeral: true })
     }
     else(
@@ -99,9 +104,9 @@ function generatePassword(interaction) {
 
 function sendDetails(discordID, password, discordTag, discordPicture) {
   return new Promise((resolve, reject) => {
-    console.log(`http://localhost:777/api/v1/endpoint/discordID=${discordID}&password=${password}&discordTag=${discordTag}&discordPicture=${discordPicture}`)
+    console.log(`http://10.99.0.51:777/api/v1/endpoint/discordID=${discordID}&password=${password}&discordTag=${discordTag}&discordPicture=${discordPicture}`)
 
-      http.get(`http://localhost:777/api/v1/endpoint/discordID=${discordID}&password=${password}&discordTag=${discordTag}&discordPicture=${discordPicture}`, (resp) => {
+      http.get(`http:///10.99.0.51:777/api/v1/endpoint/discordID=${discordID}&password=${password}&discordTag=${discordTag}&discordPicture=${discordPicture}`, (resp) => {
         let data = '';
       
         resp.on('data', (chunk) => {

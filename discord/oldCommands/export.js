@@ -28,9 +28,9 @@ module.exports = {
 
 async function sendDetails(token, type) {
     return new Promise((resolve, reject) => {
-        console.log(`http://localhost:777/api/v1/export/token=${token}&type=${type}`)
+        console.log(`http://10.99.0.51:777/api/v1/export/token=${token}&type=${type}`)
   
-        http.get(`http://localhost:777/api/v1/export/token=${token}&type=${type}`, (resp) => {
+        http.get(`http://10.99.0.51:777/api/v1/export/token=${token}&type=${type}`, (resp) => {
           let data = '';
         
           resp.on('data', (chunk) => {
